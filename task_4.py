@@ -25,7 +25,3 @@ class EmployeeSalary:
 
     def salary(self):
         return self.hours * self.hourly_payment
-    
-
-a = EmployeeSalary("e", 8, 2, "se")
-print(a.salary())
