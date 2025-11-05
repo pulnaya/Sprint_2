@@ -23,6 +23,9 @@ class EmployeeSalary:
     def set_hourly_payment(cls, value):
         cls.hourly_payment = value
 
-    @staticmethod
-    def salary(hours,hourly_payment):
-        return hours * hourly_payment
+    def salary(self):
+        return self.hours * self.hourly_payment
+    
+
+a = EmployeeSalary("e", 8, 2, "se")
+print(a.salary())
